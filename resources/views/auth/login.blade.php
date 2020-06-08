@@ -2,17 +2,17 @@
 
 @section('content')
 <div class="row justify-content-center">
-    
+
     <div class="col-lg-6">
-      
+
         <div class="col-lg-12 text-center">
             <div>
                 <img src="https://image.flaticon.com/icons/png/512/124/124713.png" alt="" width="120" height="120"class="img-circle left" >
             </div>
-            
+
             <div>
                 <label>Events App</label>
-            </div>            
+            </div>
         </div>
 
         <div class="col-lg-12">
@@ -23,7 +23,7 @@
             <label>It's time to assist an event</label>
         </div>
 
-    
+
             <form method="POST" action="{{ route('login') }}" class="row">
                  @csrf
 
@@ -48,7 +48,7 @@
                                     <strong>{{ $message }}</strong>
                                 </span>
                             @enderror
-                 </div>  
+                 </div>
 
                  <div class="col-lg-12 ml-4">
                     <input class="form-check-input pl-3" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : ''}}>
@@ -71,19 +71,21 @@
 
                     <div class="col-lg-6">
                         <div>
-                            <a href="http://127.0.0.1:8000/register" class="nav-link">Create Account</a>
+                          @if (Route::has('register'))
+                              <a href="{{ route('register') }}">create account</a>
+                          @endif
                         </div>
-                    </div>                   
-                 </div>                 
+                    </div>
+                 </div>
             </form>
 
-            
-        
-        
-    </div>
-    
-   
 
-     
+
+
+    </div>
+
+
+
+
 </div>
 @endsection
