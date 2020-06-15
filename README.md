@@ -1,4 +1,4 @@
-Guillermo Espinosa Elizondo
-Maria Graciela Torres Martinez 
-Hector Manuel Ruvalcaba Pizano
+Guillermo Espinosa Elizondo <br>
+Maria Graciela Torres Martinez <br>
+Hector Manuel Ruvalcaba Pizano<br>
 Elohim Abdil Sanchez Orozco 
